@@ -1,0 +1,651 @@
+﻿<!DOCTYPE html>
+<!--
+  SEO TECHNIQUE 1: lang="en"
+  Tells search engines and screen readers the page language.
+  Google uses this for regional search targeting.
+-->
+<html lang="en">
+
+<head>
+  <!-- SEO TECHNIQUE 2: charset
+       Declares UTF-8 encoding — prevents garbled characters
+       and is required for valid HTML5. -->
+  <meta charset="UTF-8">
+
+  <!-- SEO TECHNIQUE 3: viewport meta tag
+       Makes the page responsive on mobile devices.
+       Google uses mobile-first indexing, so this is critical for ranking. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO TECHNIQUE 4: Unique, keyword-rich page <title>
+       The title appears in the browser tab, search engine results (SERPs),
+       and social shares. Keep it 50-60 characters with the main keyword first. -->
+  <title>Buy Men's Running &amp; Formal Shoes in Karachi | StepUp Shoes</title>
+
+  <!-- SEO TECHNIQUE 5: Unique meta description (150-160 characters).
+       Shown in Google search results under the title. -->
+  <meta name="description" content="Shop premium men's running shoes, formal shoes, and casual sneakers in Karachi. StepUp Shoes offers quality footwear with fast delivery across Pakistan.">
+
+  <!-- SEO TECHNIQUE 6: Keywords meta -->
+  <meta name="keywords" content="shoes in Karachi, running shoes Pakistan, formal shoes Karachi, men's sneakers, buy shoes online Pakistan, StepUp Shoes">
+
+  <meta name="author"  content="StepUp Shoes Karachi">
+  <meta name="robots" content="index, follow">
+
+  <!-- SEO TECHNIQUE 9: Open Graph tags — control how page looks when shared on social media -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Buy Men's Running &amp; Formal Shoes in Karachi | StepUp Shoes">
+  <meta property="og:description" content="Shop premium men's running shoes, formal shoes, and casual sneakers in Karachi. Fast delivery across Pakistan.">
+  <meta property="og:image"       content="images/og-stepup-shoes.svg">
+  <meta property="og:url"         content="https://www.stepupshoes.pk/index.html">
+  <meta property="og:site_name"   content="StepUp Shoes Karachi">
+
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Buy Men's Running &amp; Formal Shoes in Karachi | StepUp Shoes">
+  <meta name="twitter:description" content="Premium footwear for men in Karachi — running, formal, and casual shoes.">
+  <meta name="twitter:image"       content="images/og-stepup-shoes.svg">
+
+  <!-- SEO TECHNIQUE 10: Canonical URL — prevents duplicate-content issues -->
+  <link rel="canonical" href="https://www.stepupshoes.pk/index.html">
+
+  <!-- SEO TECHNIQUE 11: Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="apple-touch-icon"          href="images/favicon.svg">
+
+  <!-- Google Fonts — Poppins (body) + Playfair Display (headings) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ============================================================
+       SEO TECHNIQUE 12: Semantic HTML
+       Using header, nav, main, section, article, footer instead
+       of generic divs helps Google understand page structure.
+       ============================================================ -->
+
+  <header>
+    <!-- SEO TECHNIQUE 13: nav with aria-label -->
+    <nav class="navbar" aria-label="Primary Navigation">
+      <div class="container">
+
+        <!-- SEO TECHNIQUE 14: Internal links — logo links to home -->
+        <a href="index.html" class="navbar__logo" aria-label="StepUp Shoes — Home">
+          Step<span>Up</span>
+        </a>
+
+        <button class="navbar__hamburger"
+                aria-label="Toggle navigation menu"
+                aria-expanded="false"
+                aria-controls="navMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="navbar__links" id="navMenu" role="list">
+          <li><a href="index.html"   class="active" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         SECTION 1: HERO
+         SEO TECHNIQUE 15: Exactly ONE H1 per page, with main keyword.
+         ============================================================ -->
+    <section class="hero" aria-label="Hero — Welcome to StepUp Shoes">
+
+      <div class="hero__bg" role="img" aria-label="Red running shoe from the StepUp Shoes collection"></div>
+
+      <div class="container">
+        <div class="hero__content">
+
+          <span class="hero__eyebrow">Karachi's Premium Footwear Store</span>
+
+          <!-- SEO TECHNIQUE 15: H1 with primary keyword -->
+          <h1 class="hero__title">
+            Walk in Style,<br>
+            <span>Step Up</span> Your Game
+          </h1>
+
+          <p class="hero__tagline">
+            Discover Pakistan's finest collection of running shoes, formal shoes,
+            and casual sneakers — crafted for comfort, built to impress.
+          </p>
+
+          <!-- SEO TECHNIQUE 14: Internal contextual links within content -->
+          <div class="hero__cta">
+            <a href="#products" class="btn btn-primary">Shop Now</a>
+            <a href="about.html" class="btn btn-outline">Our Story</a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#products" class="hero__scroll-hint" aria-label="Scroll to products">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+             aria-hidden="true">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </a>
+
+    </section>
+
+
+    <!-- ============================================================
+         SECTION 2: PRODUCTS
+         SEO TECHNIQUE 16: H2 follows H1 — proper heading hierarchy.
+         ============================================================ -->
+    <section class="section" id="products" aria-label="Our Shoe Collection">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <h2>Our Premium Collection</h2>
+          <p>
+            Handpicked styles for every occasion — from track to boardroom.
+            All shoes available for delivery across Karachi and Pakistan.
+          </p>
+        </div>
+
+        <!-- Product category filter tabs -->
+        <div class="filter-tabs reveal" role="group" aria-label="Filter shoes by category">
+          <button class="filter-btn active" data-filter="all"     aria-pressed="true">All Shoes</button>
+          <button class="filter-btn"        data-filter="running" aria-pressed="false">Running</button>
+          <button class="filter-btn"        data-filter="formal"  aria-pressed="false">Formal</button>
+          <button class="filter-btn"        data-filter="casual"  aria-pressed="false">Casual</button>
+        </div>
+
+        <!-- SEO TECHNIQUE 17: article elements for self-contained product content -->
+        <div class="products-grid">
+
+          <!-- CARD 1: Running -->
+          <article class="card reveal reveal-delay-1" data-category="running">
+            <div class="card__image">
+              <!-- SEO TECHNIQUE 18: Descriptive alt text + width + height + lazy loading -->
+              <img src="images/running-shoes.jpg"
+                   alt="White men's running shoes with orange sole — StepUp RS-100"
+                   width="400" height="300"
+                   loading="lazy">
+              <span class="card__badge">New</span>
+            </div>
+            <div class="card__body">
+              <span class="card__category">Running</span>
+              <!-- SEO TECHNIQUE 16: H3 follows H2 — correct hierarchy -->
+              <h3 class="card__name">StepUp RS-100 Runner</h3>
+              <p class="card__desc">
+                Lightweight mesh upper with responsive foam cushioning.
+                Perfect for daily runs and gym workouts in Karachi's heat.
+              </p>
+              <div class="card__footer">
+                <div class="card__price">PKR 8,500</div>
+                <a href="contact.html" class="btn btn-primary">Buy Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 2: Formal -->
+          <article class="card reveal reveal-delay-2" data-category="formal">
+            <div class="card__image">
+              <img src="images/brown-loafers.jpg"
+                   alt="Brown leather men's dress shoes — StepUp Classic"
+                   width="400" height="300"
+                   loading="lazy">
+              <span class="card__badge">Bestseller</span>
+            </div>
+            <div class="card__body">
+              <span class="card__category">Formal</span>
+              <h3 class="card__name">StepUp Classic Oxford</h3>
+              <p class="card__desc">
+                Genuine leather formal shoes in Karachi — ideal for offices,
+                weddings, and corporate events. Hand-stitched detailing.
+              </p>
+              <div class="card__footer">
+                <div class="card__price">PKR 12,999</div>
+                <a href="contact.html" class="btn btn-primary">Buy Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 3: Casual -->
+          <article class="card reveal reveal-delay-3" data-category="casual">
+            <div class="card__image">
+              <img src="images/casual-sneakers.jpg"
+                   alt="Black and red casual sneakers for everyday wear — StepUp Urban"
+                   width="400" height="300"
+                   loading="lazy">
+            </div>
+            <div class="card__body">
+              <span class="card__category">Casual</span>
+              <h3 class="card__name">StepUp Urban Sneaker</h3>
+              <p class="card__desc">
+                Versatile canvas sneakers that go with jeans or chinos.
+                Available in multiple colours — a Karachi streetwear staple.
+              </p>
+              <div class="card__footer">
+                <div class="card__price">
+                  PKR 5,999
+                  <span class="original">PKR 7,500</span>
+                </div>
+                <a href="contact.html" class="btn btn-primary">Buy Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 4: Running -->
+          <article class="card reveal reveal-delay-1" data-category="running">
+            <div class="card__image">
+              <img src="images/blue-running-shoes.jpg"
+                   alt="White knit athletic sneakers with dark soles — StepUp Speed Pro"
+                   width="400" height="300"
+                   loading="lazy">
+              <span class="card__badge card__badge--sale">Sale</span>
+            </div>
+            <div class="card__body">
+              <span class="card__category">Running</span>
+              <h3 class="card__name">StepUp Speed Pro</h3>
+              <p class="card__desc">
+                High-performance running shoes with carbon-fibre midsole plate.
+                Designed for marathon runners and serious athletes.
+              </p>
+              <div class="card__footer">
+                <div class="card__price">
+                  PKR 14,500
+                  <span class="original">PKR 18,000</span>
+                </div>
+                <a href="contact.html" class="btn btn-primary">Buy Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 5: Formal -->
+          <article class="card reveal reveal-delay-2" data-category="formal">
+            <div class="card__image">
+              <img src="images/brown-casual-sneakers.jpg"
+                   alt="Brown low-top casual sneakers — StepUp Monaco"
+                   width="400" height="300"
+                   loading="lazy">
+            </div>
+            <div class="card__body">
+              <span class="card__category">Formal</span>
+              <h3 class="card__name">StepUp Monaco Loafer</h3>
+              <p class="card__desc">
+                Slip-on brown leather loafers with a cushioned insole.
+                A timeless formal style for men's footwear in Karachi.
+              </p>
+              <div class="card__footer">
+                <div class="card__price">PKR 11,500</div>
+                <a href="contact.html" class="btn btn-primary">Buy Now</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 6: Casual -->
+          <article class="card reveal reveal-delay-3" data-category="casual">
+            <div class="card__image">
+              <img src="images/white-slipons.jpg"
+                   alt="Burgundy canvas casual sneakers with white soles — StepUp Cloud"
+                   width="400" height="300"
+                   loading="lazy">
+              <span class="card__badge">New</span>
+            </div>
+            <div class="card__body">
+              <span class="card__category">Casual</span>
+              <h3 class="card__name">StepUp Cloud Slip-On</h3>
+              <p class="card__desc">
+                Ultra-lightweight slip-on with memory foam insole.
+                Perfect for casual days, travel, and beach outings.
+              </p>
+              <div class="card__footer">
+                <div class="card__price">PKR 6,499</div>
+                <a href="contact.html" class="btn btn-primary">Buy Now</a>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /products-grid -->
+
+        <!-- SEO TECHNIQUE 14: Contextual internal link in content body -->
+        <div style="text-align:center; margin-top:48px;" class="reveal">
+          <p style="color:#888; margin-bottom:16px;">
+            Looking for something specific?
+            <a href="contact.html" style="color:var(--color-accent); font-weight:600;">Contact us</a>
+            and we'll find the perfect pair for you.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION 3: WHY CHOOSE US
+         ============================================================ -->
+    <section class="section section--grey" aria-label="Why Choose StepUp Shoes">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <h2>Why Choose StepUp Shoes?</h2>
+          <p>
+            From quality craftsmanship to fast delivery, here's why thousands
+            of customers in Karachi trust us for their footwear.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="feature-box reveal reveal-delay-1">
+            <div class="feature-box__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>100% Authentic Quality</h3>
+            <p>
+              Every pair of shoes we sell is sourced from certified manufacturers.
+              No imitations — only genuine, durable footwear you can trust.
+            </p>
+          </div>
+
+          <div class="feature-box reveal reveal-delay-2">
+            <div class="feature-box__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13" rx="1"/>
+                <path d="M16 8h4l3 3v5h-7V8z"/>
+                <circle cx="5.5" cy="18.5" r="2.5"/>
+                <circle cx="18.5" cy="18.5" r="2.5"/>
+              </svg>
+            </div>
+            <h3>Fast Karachi Delivery</h3>
+            <p>
+              Same-day delivery within Karachi on orders placed before 2 PM.
+              Nationwide shipping across Pakistan in 2–3 business days.
+            </p>
+          </div>
+
+          <div class="feature-box reveal reveal-delay-3">
+            <div class="feature-box__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="1 4 1 10 7 10"/>
+                <path d="M3.51 15a9 9 0 1 0 .49-4"/>
+              </svg>
+            </div>
+            <h3>Easy 7-Day Returns</h3>
+            <p>
+              Not satisfied? Return or exchange any pair within 7 days,
+              no questions asked. Your comfort is our top priority.
+            </p>
+          </div>
+
+          <div class="feature-box reveal reveal-delay-1">
+            <div class="feature-box__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+            <h3>Trusted by 10,000+ Customers</h3>
+            <p>
+              Over a decade of serving Karachi's footwear needs. Join thousands
+              of happy customers who walk proudly in StepUp Shoes.
+            </p>
+          </div>
+
+          <div class="feature-box reveal reveal-delay-2">
+            <div class="feature-box__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="8"  x2="12" y2="12"/>
+                <line x1="12" y1="16" x2="12.01" y2="16"/>
+              </svg>
+            </div>
+            <h3>Expert Fitting Advice</h3>
+            <p>
+              Our trained staff help you find the perfect size and style —
+              in-store or via WhatsApp. Never buy the wrong shoe again.
+            </p>
+          </div>
+
+          <div class="feature-box reveal reveal-delay-3">
+            <div class="feature-box__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                <line x1="1" y1="10" x2="23" y2="10"/>
+              </svg>
+            </div>
+            <h3>Secure &amp; Easy Payment</h3>
+            <p>
+              Pay with cash on delivery, credit/debit card, or JazzCash/EasyPaisa.
+              All transactions are secure and fully encrypted.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION 4: TESTIMONIALS
+         ============================================================ -->
+    <section class="section section--dark" aria-label="Customer Testimonials">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <h2>What Our Customers Say</h2>
+          <p>Real reviews from real customers across Karachi and Pakistan.</p>
+        </div>
+
+        <div class="testimonials-grid">
+
+          <article class="testimonial-card reveal reveal-delay-1">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-card__text">
+              "I bought the RS-100 running shoes for my morning jogs at Clifton.
+              The cushioning is incredible — my knees don't ache anymore.
+              Delivery was same day too! Highly recommend StepUp Shoes Karachi."
+            </p>
+            <div class="testimonial-card__author">
+              <img src="images/customer-ahmed-ali.svg"
+                   alt="Ahmed Ali — satisfied StepUp Shoes customer from Karachi"
+                   class="testimonial-card__avatar"
+                   width="48" height="48"
+                   loading="lazy">
+              <div class="testimonial-card__author-info">
+                <strong>Ahmed Ali</strong>
+                <span>DHA Karachi</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal reveal-delay-2">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-card__text">
+              "Finally found formal shoes in Karachi that actually look expensive
+              without breaking the bank. The Classic Oxford is perfect for my
+              office and client meetings. Quality is top notch, will definitely order again."
+            </p>
+            <div class="testimonial-card__author">
+              <img src="images/customer-sara-khan.svg"
+                   alt="Sara Khan — customer review for StepUp Shoes formal collection"
+                   class="testimonial-card__avatar"
+                   width="48" height="48"
+                   loading="lazy">
+              <div class="testimonial-card__author-info">
+                <strong>Sara Khan</strong>
+                <span>Gulshan-e-Iqbal, Karachi</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal reveal-delay-3">
+            <div class="stars" aria-label="4 out of 5 stars">★★★★☆</div>
+            <p class="testimonial-card__text">
+              "The Urban Sneakers are my go-to casual shoes now. Lightweight,
+              stylish, and comfortable for all-day wear. The 7-day return policy
+              gave me confidence to order online. StepUp Shoes never disappoints."
+            </p>
+            <div class="testimonial-card__author">
+              <img src="images/customer-hassan-raza.svg"
+                   alt="Hassan Raza — StepUp Shoes casual sneakers review"
+                   class="testimonial-card__avatar"
+                   width="48" height="48"
+                   loading="lazy">
+              <div class="testimonial-card__author-info">
+                <strong>Hassan Raza</strong>
+                <span>PECHS, Karachi</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         SECTION 5: NEWSLETTER
+         ============================================================ -->
+    <section class="newsletter" aria-label="Newsletter Signup">
+      <div class="container">
+        <h2 class="reveal">Get Exclusive Offers &amp; New Arrivals</h2>
+        <p class="reveal reveal-delay-1">
+          Join 5,000+ subscribers and be the first to know about new shoe
+          launches, seasonal sales, and exclusive Karachi deals.
+        </p>
+        <form class="newsletter__form reveal reveal-delay-2"
+              aria-label="Email newsletter signup"
+              novalidate>
+          <input type="email"
+                 name="newsletter-email"
+                 placeholder="Enter your email address"
+                 aria-label="Your email address"
+                 required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <a href="index.html" class="navbar__logo" aria-label="StepUp Shoes — Home">
+            Step<span>Up</span>
+          </a>
+          <p>
+            Karachi's most trusted premium footwear store since 2012.
+            Quality running shoes, formal shoes, and casual sneakers
+            delivered across Pakistan.
+          </p>
+          <div class="social-links" aria-label="Follow us on social media">
+            <a href="#" aria-label="Follow StepUp Shoes on Facebook" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Follow StepUp Shoes on Instagram" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Contact StepUp Shoes on WhatsApp" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- SEO TECHNIQUE 14: Footer-wide internal links on every page -->
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html#products">Our Products</a></li>
+            <li><a href="contact.html">Get a Quote</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="index.html#products">Running Shoes</a></li>
+            <li><a href="index.html#products">Formal Shoes</a></li>
+            <li><a href="index.html#products">Casual Sneakers</a></li>
+            <li><a href="index.html#products">Men's Footwear</a></li>
+            <li><a href="index.html#products">New Arrivals</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <address style="font-style:normal;">
+            <div class="footer__contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>Shop #12, Tariq Road,<br>Karachi, Pakistan</span>
+            </div>
+            <div class="footer__contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <a href="tel:+922134567890">+92 21 3456 7890</a>
+            </div>
+            <div class="footer__contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <a href="mailto:info@stepupshoes.pk">info@stepupshoes.pk</a>
+            </div>
+          </address>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+        <p>&#169; 2024 <a href="index.html">StepUp Shoes Karachi</a>. All rights reserved.</p>
+        <p>Designed with &#9825; for Karachi</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <button class="back-to-top" aria-label="Back to top of page" title="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
